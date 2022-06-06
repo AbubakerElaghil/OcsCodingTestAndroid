@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/gameListFragment">
+
+    <fragment
+        android:id="@+id/gameListFragment"
+        android:name="com.example.ocscodingtestapp.presentaion.ui.games_list.GameListFragment"
+        android:label="GameListFragment" >
+        <action
+            android:id="@+id/toAthleteDetail"
+            app:destination="@id/athleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/athleteFragment"
+        android:name="com.example.ocscodingtestapp.presentaion.ui.Athlete.AthleteFragment"
+        android:label="AthleteFragment" />
+</navigation>
